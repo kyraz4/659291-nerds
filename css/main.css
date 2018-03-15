@@ -15,6 +15,60 @@ a {
     text-decoration: none;
 }
 
+.btn {
+    font-size: 16px;
+    line-height: 18px;
+    display: block;
+    outline: 0;
+    border: 0;
+    text-transform: uppercase;
+}
+
+.btn-red {
+    color: #ffffff;
+    background-color: #fb565a;
+}
+.btn-red:hover,
+.btn-red:focus {
+    background-color: #e74246;
+}
+
+.btn-red:active {
+    background-color: #d7373b;
+}
+
+.btn-grey {
+    color: #000000;
+
+    background-color: #eeeeee;
+}
+.btn-green{
+    color: #ffffff;
+
+    background-color: #00ca74;
+}
+.btn-green:focus,
+.btn-green:hover {
+    background-color: #00bc6c;
+}
+.btn-green:active {
+     background-color:#00aa62;
+}
+
+.btn-yellow {
+    color: #ffffff;
+
+    background-color: #efc84a;
+}
+.btn-yellow:hover,
+.btn-yellow:focus {
+    background-color: #eab534;
+}
+.btn-yellow:active {
+    background-color: #e5a722;
+}
+
+
 .page-header {
     background-color: #eeeeee;
 }
@@ -64,12 +118,6 @@ a {
     line-height: 24px;
 }
 
-.btn {
-    font-size: 16px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #ffffff;
-}
 
 .servises-item h3 {
     font-size: 24px;
@@ -151,83 +199,84 @@ a {
     line-height: 45px;
     font-weight: 500;
 }
-.form-to-write-us label{
+
+.form-to-write-us label {
     font-size: 16px;
     line-height: 18px;
     font-weight: bold;
 }
+
 .form-to-write-us input:placeholder-shown {
-    font-size:16px;
-    line-height:18px;
+    font-size: 16px;
+    line-height: 18px;
     color: #444444;
 }
+
 .form-to-write-us textarea:placeholder-shown {
-     font-size:16px;
-    line-height:18px;
+    font-size: 16px;
+    line-height: 18px;
     color: #444444;
 }
-.sorting-form legend{
+
+.sorting-form legend {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
-.sorting-container label{
+
+.sorting-container label {
     font-size: 16px;
     line-height: 20px;
-    color:#283136;
+    color: #283136;
 }
-.sorting-form .btn-grey {
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 700;
-    color:#eeeeee;
-    
-    background-color: #fb565a;
-}
-.catalog-item a{
+
+.catalog-item a {
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
-    color:#000000;
+    color: #000000;
     text-transform: uppercase
 }
 
-.catalog-item p{
+.catalog-item p {
     font-size: 16px;
     line-height: 18px;
-    color:#666666;
+    color: #666666;
 }
-.catalog-item button {
-    font-size: 16px;
-    line-height: 18px;
-    color:#ffffff;
-     background-color: #fb565a;
-}
-.catalog-item button:hover,
+
+
+
+/*.catalog-item button:hover,
 .catalog-item button:focus {
-     background-color: #e74246;
+    background-color: #e74246;
 }
-.catalog-item button:active{
-     background-color: #d7373b;
+
+.catalog-item button:active {
+    background-color: #d7373b;
 }
+*/
+
 .catalog-list {
     list-style: none;
 }
 
-.pagination a{
-    color:#000000; 
+.pagination a {
+    color: #000000;
 }
-.sorting-list a{
+
+.sorting-list a {
     font-size: 14px;
     line-height: 18px;
-    color:#eaeaea;
+    color: #eaeaea;
     text-transform: uppercase;
 }
+
 .sorting-list a:focus,
-.sorting-list a:hover{
-    color:#8f8f8f;
+.sorting-list a:hover {
+    color: #8f8f8f;
 }
+
 .sorting-list a:active {
-    color:#000000;
+    color: #000000;
 }
