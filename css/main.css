@@ -181,9 +181,11 @@ a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    color:#000000;
+    color:#eeeeee;
+    
+    background-color: #fb565a;
 }
-.catalog-item h2 {
+.catalog-item a{
     font-size: 18px;
     line-height: 30px;
     font-weight: bold;
@@ -200,7 +202,32 @@ a {
     font-size: 16px;
     line-height: 18px;
     color:#ffffff;
+     background-color: #fb565a;
+}
+.catalog-item button:hover,
+.catalog-item button:focus {
+     background-color: #e74246;
+}
+.catalog-item button:active{
+     background-color: #d7373b;
 }
 .catalog-list {
     list-style: none;
+}
+
+.pagination a{
+    color:#000000; 
+}
+.sorting-list a{
+    font-size: 14px;
+    line-height: 18px;
+    color:#eaeaea;
+    text-transform: uppercase;
+}
+.sorting-list a:focus,
+.sorting-list a:hover{
+    color:#8f8f8f;
+}
+.sorting-list a:active {
+    color:#000000;
 }
