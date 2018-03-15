@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.page-header {
+    background-color: #eeeeee;
+}
+
+.navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+    font-weight: 500;
+
+    background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-menu {
+    list-style: none;
+}
+
+.site-navigation a,
+.user-menu a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-menu a:hover,
+.user-menu a:focus {
+    color: #fb565a;
+}
+
+.site-navigation a:active,
+.user-menu a:active {
+    color: #a6a6a6;
+}
+
+.slider-1 h2,
+.slider-2 h2,
+.slider-3 h2 {
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.slider-1 p,
+.slider-2 p,
+.slider-3 p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.btn {
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.servises-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.servises-item p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.servises-list {
+    list-style: none;
+}
+
+.about-us-title {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+.about-us p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.order-to-work {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.us-statistic b {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.table-statistic tr:first-child {
+    font-size: 45px;
+    line-height: 10, 06px;
+    font-weight: bold;
+}
+
+.table-statistic tr:last-child {
+    font-size: 16px;
+    line-height: 18px;
+    color: #535a5e;
+}
+
+.write-us h3 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.write-us p {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666666;
+}
+
+.lets-friend b {
+    font-size: 36px;
+    line-height: 36px;
+
+}
+
+.lets-friend p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #696969;
+}
+
+.form-to-write-title {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+.form-to-write-us label{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+}
+.form-to-write-us input:placeholder-shown {
+    font-size:16px;
+    line-height:18px;
+    color: #444444;
+}
+.form-to-write-us textarea:placeholder-shown {
+     font-size:16px;
+    line-height:18px;
+    color: #444444;
+}
+.sorting-form legend{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;  
+}
+.sorting-container label{
+    font-size: 16px;
+    line-height: 20px;
+    color:#283136;
+}
+.sorting-form .btn-grey {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    color:#000000;
+}
+.catalog-item h2 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: bold;
+    color:#000000;
+    text-transform: uppercase
+}
+
+.catalog-item p{
+    font-size: 16px;
+    line-height: 18px;
+    color:#666666;
+}
+.catalog-item button {
+    font-size: 16px;
+    line-height: 18px;
+    color:#ffffff;
+}
+.catalog-list {
+    list-style: none;
+}
