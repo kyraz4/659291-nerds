@@ -8,13 +8,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/outline.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
-    <style>
-        @font-face {
-            font-family: "Myriad Pro";
-            src: url(fonts/MyriadPro-Regular.woff) format("woff")
-        }
-
-    </style>
 </head>
 
 <body>
@@ -77,7 +70,7 @@
             </section>
             <section class="info">
                 <div class="about-us">
-                    <b class="about-us-title">Мы - маленькая, но гордая дизайн-студия из Краснодара.</b>
+                    <b class="about-us-title">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</b>
                     <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем на покладая рук, как роботы.</p>
                     <b class="order-to-work">Выполняем заказы на разработку</b>
                     <ul class="about-us-list">
@@ -135,12 +128,12 @@
             </div>
         </div>
     </footer>
-    <section class="write-us-box">
-        <h3 class="visully-hidden">Форма обратной связи</h3>
+    <section class="write-us-box ">
+        <h3 class="visually-hidden">Форма обратной связи</h3>
         <form class="form-to-write-us">
         <div class="write-and-close">  
             <p class="form-to-write-title">Напишите нам</p>
-              <button type="button" class="button-close" >Закрыть<img src="img/close-cross.svg"></button>
+              <button type="button" class="button-close" ><span class="visually-hidden">Закрыть</span><img src="img/close-cross.svg"></button>
             </div>  
             <div class="name-email-wrap">
                 <p class="your-name-info">
@@ -156,6 +149,7 @@
                 <label for="text-letter">Текст письма:</label>
                 <textarea id="text-letter" name="text-letter" placeholder="В свободной форме"></textarea>
             </p>
+             <button class="btn btn-red" type="submit">Отправить</button>
         </form>
        
     </section>

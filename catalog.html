@@ -11,20 +11,20 @@
 
 <body>
     <header class="page-header">
-        <div class="page-header-catalog">
-            <nav class="navigation">
-                <a href="index.html" class="logo"><img src="img/nerds-logo.svg" alt="logotype-nerds" height="65" width="160"></a>
-                <ul class="site-navigation">
-                    <li><a href="#">студия</a></li>
-                    <li><a href="#">клиенты</a></li>
-                    <li><a href="catalog.html">магазин</a></li>
-                    <li><a href="#">контакты</a></li>
-                </ul>
-                <ul class="user-menu">
-                    <li class="basket"><img src="img/cart-icon.svg"><a href="#">корзина</a></li>
-                </ul>
-            </nav>
-            <h1>Магазин готовых шаблонов</h1>
+        <div class="container">
+                <nav class="navigation">
+                    <a href="index.html" class="logo"><img src="img/nerds-logo.svg" alt="logotype-nerds" height="65" width="160"></a>
+                    <ul class="site-navigation">
+                        <li><a href="#">студия</a></li>
+                        <li><a href="#">клиенты</a></li>
+                        <li><a href="catalog.html">магазин</a></li>
+                        <li><a href="#">контакты</a></li>
+                    </ul>
+                    <ul class="user-menu">
+                        <li class="basket"><img src="img/cart-icon.svg"><a href="#">корзина</a></li>
+                    </ul>
+                </nav>
+                <h1>Магазин готовых шаблонов</h1>
         </div>
     </header>
     <main class="page-main page-main-inner">
@@ -37,24 +37,24 @@
                     </fieldset>
                     <fieldset class="sorting-container">
                         <legend>Сетка:</legend>
-                        <input type="radio" id="adaption" name="adaption" checked>
+                        <input class="visually-hidden" type="radio" id="adaption" name="adaption" checked >
                         <label for="adaption">Адаптивная</label>
-                        <input type="radio" id="fixed" name="fixed">
+                        <input class="visually-hidden" type="radio" id="fixed" name="fixed">
                         <label for="fixed">Фиксированная</label>
-                        <input type="radio" id="rubber" name="rubber">
+                        <input class="visually-hidden" type="radio" id="rubber" name="rubber">
                         <label for="rubber">Резиновая</label>
                     </fieldset>
                     <fieldset class="sorting-container">
                         <legend>Особенности:</legend>
-                        <input type="checkbox" id="slider" name="slider" checked>
+                        <input class="visually-hidden" type="checkbox" id="slider" name="slider" checked>
                         <label for="slider">Слайдер</label>
-                        <input type="checkbox" id="blok" name="blok">
+                        <input class="visually-hidden" type="checkbox" id="blok" name="blok">
                         <label for="blok">Блок преимуществ</label>
-                        <input type="checkbox" id="news" name="news" checked>
+                        <input class="visually-hidden" type="checkbox" id="news" name="news" checked>
                         <label for="news">Новости</label>
-                        <input type="checkbox" id="galery" name="galery">
+                        <input class="visually-hidden" type="checkbox" id="galery" name="galery">
                         <label for="galery">Галерея</label>
-                        <input type="checkbox" id="bin" name="bin">
+                        <input class="visually-hidden" type="checkbox" id="bin" name="bin">
                         <label for="bin">Корзина</label>
                     </fieldset>
                     <button class="btn btn-grey" type="submit">Показать</button>
@@ -163,13 +163,13 @@
             </div>
         </div>
     </footer>
-     <section class="write-us-box">
+    <section class="write-us-box">
         <h3 class="visully-hidden">Форма обратной связи</h3>
         <form class="form-to-write-us">
-        <div class="write-and-close">  
-            <p class="form-to-write-title">Напишите нам</p>
-              <button type="button" class="button-close" >Закрыть<img src="img/close-cross.svg"></button>
-            </div>  
+            <div class="write-and-close">
+                <p class="form-to-write-title">Напишите нам</p>
+                <button type="button" class="button-close">Закрыть<img src="img/close-cross.svg"></button>
+            </div>
             <div class="name-email-wrap">
                 <p class="your-name-info">
                     <label for="your-name">Ваше имя:</label>
@@ -185,7 +185,7 @@
                 <textarea id="text-letter" name="text-letter" placeholder="В свободной форме"></textarea>
             </p>
         </form>
-       
+
     </section>
 </body>
 
