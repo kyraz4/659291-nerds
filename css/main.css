@@ -15,6 +15,12 @@ a {
     text-decoration: none;
 }
 
+.container {
+    width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
 .btn {
     font-size: 16px;
     line-height: 18px;
@@ -22,6 +28,9 @@ a {
     outline: 0;
     border: 0;
     text-transform: uppercase;
+    text-align: center;
+    
+     
 }
 
 .btn-red {
@@ -90,6 +99,7 @@ a {
 .site-navigation a,
 .user-menu a {
     color: #000000;
+    
 }
 
 .site-navigation a:hover,
@@ -174,12 +184,18 @@ a {
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    padding-left: 50px;
+    
 }
-
+.write-us {
+    width: 320px;
+    padding-left:140px; 
+}
 .write-us p {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+    padding-left:50px; 
 }
 
 .lets-friend b {
@@ -271,16 +287,10 @@ a {
 }
 /*-Сеточные стили--*/
 
-
-
-.page-header {
-    margin-bottom: 80px;
-    
-}
-
 .logo {
     height: 85px;
     width: 190px;
+    padding-top: 50px; 
 }
 .navigation {
      display: flex;
@@ -288,12 +298,17 @@ a {
 
 }
 .site-navigation {
+    font-size: 16px;
+    line-height:30px;
+    text-transform: uppercase;
+     display: flex;
+    justify-content: space-between;
        margin: 0;
     padding: 0;
-    
+    padding-top: 75px; 
     list-style: none;
-    
-    min-height: 70px;
+     width: 440px;
+    padding-right:85px; 
 }
 user-menu {
     margin: 0;
@@ -304,36 +319,105 @@ user-menu {
       min-height: 70px;
 }
 
-.sliders {
-    float: left;  
+.slider {
+   display: none;
+    width: 400px;
+    padding-bottom: 80px;
+    padding-top:10px 
 }
 
-.services .servises-list {
+.slider h2 {
+    margin-bottom: 0;
+}
+
+.slider p {
+    padding-top:11px; 
+    padding-bottom:40px;
+    margin-bottom: 0;
+}
+.slider a {
+    padding-top:15px;  
+} 
+
+.slider .btn {
+    width:240px;
+    height:35px;
+}
+.slider-1 {
+    display: block;
+}
+.services {
+    padding-bottom:80px;
+    padding-top: 80px;
+    width: 1100px;
+}
+
+.servises-list {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
+     margin: 0;
+    padding: 0;
 }
 .servises-item {
    width: 300px;
 }
-.us-statistic {
-    float: right;
+
+.servises-item h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top:17px;
+    padding-bottom:0;
 }
+
+.servises-item p {
+    width:250px;
+    font-size:16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-bottom:15px; 
+    padding-top:2px;
+    padding-left:3px; 
+}
+
+
+.servises-item .btn {
+    padding-top:17px ;
+    padding-right:100px;
+
+    width:20px; 
+    margin-top:;
+    margin-left:41px;
+    height:32px ;
+ 
+    
+}
+
+
+.info {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+}
+
+
+
 .about-us {
-    width: 660px;
-    padding-left:140px; 
+    width: 770px;
+    padding-top:26px; 
 }
+
+
+
 .us-statistic {
     display: flex;
       flex-direction: column;
     width: 390px;
     padding-left: 145px;
+
 }
-.info {
-    display: flex;
-}
+
 .partners {
     display: flex;
-    padding-left: 150px;
 }
 
 .partners li:not(:first-child) {
@@ -354,10 +438,9 @@ user-menu {
     flex-direction: column;
     width: 320px;
 }
-.sorting-container{
+.main-sorting-container{
     display: flex;
-    flex-direction: column;
-    padding-left: 140px;
+    flex-direction: column; 
     width: 260px;
 }
 .catalog-list {
@@ -365,11 +448,14 @@ user-menu {
    width: 760px;
 }
 .catalog-container {
-    float: right;
-    padding-left:190px;
+
+    padding-left:340px;
+
 }
 .page-main {
-    display: flex;
+   display: flex;
+    flex-direction: column;
+    
 }
 .sorting {
     display: flex;
@@ -380,6 +466,76 @@ user-menu {
     display:flex;
     
 }
+
+.sorting-list li {
+    list-style-type: none;
+}
+.sorting b {
+     text-transform: uppercase;
+}
 .sorting-item {
     padding-right:20px;
+    color: #b2b2b2;
+}
+
+.user-menu .basket {
+    text-transform: uppercase;
+    padding-top: 60px;
+    
+}
+.sorting {
+   width: 760px; 
+padding-left: 400px;    
+}
+
+.sorting-form {
+    
+}
+
+.page-header-catalog {
+    width: 1160px;
+    padding-left:213px;
+    padding-bottom:71px;
+}
+
+.page-header-catalog h1{
+     font-size:55px;
+    line-height:55px;
+    padding-top:20px; 
+    padding-left:215px; 
+} 
+
+.catalog {
+    display: flex;
+    flex-direction: column;
+}
+.social li {
+    list-style-type: none;
+}
+
+.partners li {
+    list-style-type: none;
+}
+
+
+.write-us-box {
+    width: 960px;
+    padding-left: 240px;
+ 
+}
+
+.name-email-wrap {
+    display: flex;
+}
+.write-and-close {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map {
+    padding-left:100px; 
+}
+
+.nerds-logo {
+    padding-bottom:40px; 
 }
