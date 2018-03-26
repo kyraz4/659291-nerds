@@ -52,8 +52,19 @@ a {
 
 .btn-grey {
     color: #000000;
-
+     width: 260px;
     background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.btn-grey:hover,
+.btn-grey :focus {
+    background-color: #dfdfdf;
+}
+
+.btn-grey:active {
+    background-color: #d5d5d5;
+    color: #959595;
 }
 
 .btn-green {
@@ -363,17 +374,58 @@ a {
     color: #444444;
 }
 
-.sorting-form legend {
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
 
 .sorting-container label {
     font-size: 16px;
     line-height: 20px;
     color: #283136;
+}
+.catalog-item {
+    position: relative;
+    margin-bottom: 33px;
+    padding-top: 42px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+}
+
+.catalog-item:after {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    left: 15px;
+    top: 13px;
+    box-shadow: 25px 0 0 #ffffff,
+                50px 0 0 #ffffff;
+    
+}
+
+.catalog-item div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #eeeeee;
+    width: 100%;
+    display: none;
+}
+
+.catalog-item:hover {
+    background-color: #4d4d4d;
+}
+
+.catalog-item:hover div{
+    display: block;
+}
+
+.catalog-item img {
+    display: block;
+}
+
+.catalog-item h2 {
+    text-align: center;
+    padding: 0 10px; 
 }
 
 .catalog-item a {
@@ -388,6 +440,9 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+    text-align: center;
+    padding: 0 60px;
+    
 }
 
 
@@ -397,6 +452,9 @@ a {
     width: 760px;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
 }
 
 
@@ -616,7 +674,12 @@ user-menu {
 .lets-friend {
     padding-left: 135px;
 }
-
+.map {
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+   position: absolute;
+}
 .social {
     display: flex;
     width:265px;
@@ -629,15 +692,23 @@ user-menu {
     width: 80px;
     border-radius: 50%;
     background-color: #e1e1e1;
-    display: block;
-    
+    display: block;    
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #e74246;
+}
+
+.social-button:active {
+    background-color: #d7373b;
 }
 
 .contacts {
-    display: flex;
-    flex-direction: column;
-    width: 320px;
+   min-height: 416px;
+    position: relative;
 }
+
 
 .main-sorting-container {
     display: flex;
@@ -690,7 +761,8 @@ user-menu {
 
 .user-menu .basket {
     text-transform: uppercase;
-
+    background-image: url(img/cart-icon.svg);
+    background-repeat: no-repeat;
 }
 
 
@@ -705,7 +777,7 @@ user-menu {
     font-size: 55px;
     line-height: 55px;
     padding-top: 20px;
-    padding-bottom: 110px;
+    padding-bottom: 117px;
     text-align: center;
     margin-bottom: 0;
 }
@@ -744,11 +816,6 @@ user-menu {
     justify-content: space-between;
 }
 
-.contacts {
-
-    width:1440px; 
-    
-}
 
 .nerds-logo {
     padding-bottom: 34px;
@@ -760,4 +827,104 @@ user-menu {
 .text-letter-info {
     display: flex;
     flex-direction: column;
+}
+
+.range-filter {
+    width: 260px;
+    margin-top: 49px;
+}
+.sorting-container {
+ margin: 0;
+ padding: 0;
+    
+    border: none;
+}
+
+.sorting-container legend {
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.range-controls {
+    position: relative;
+    
+    height: 41px;
+    margin-bottom: 15px;
+    padding-top: 39px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+    background-color: #f1f1f1f1;
+    
+    border-radius: 5px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    
+    background: #d7dcde;;
+}
+
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    
+    background: #00ca74;
+}
+
+.range-controls .toggle {
+    position: absolute;
+    top:31px;
+    left: 0;
+    
+    width: 4px;
+    height: 4px;
+    padding: 0;
+    
+    border: 8px solid #ffffff;
+    background-color: #ababab;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+    cursor: pointer;
+}
+
+.range-controls .toggle-min {
+    left: 18px;
+}
+
+.range-controls .toggle-max {
+    left: 160px;
+}
+.price-controls {
+    font-size: 0;
+    padding-bottom: 61px;
+}
+
+.price-controls label {
+  display: inline-block;
+  width: 50%;
+    
+    font-size: 16px;
+  text-transform: uppercase;
+}
+.price-controls input {
+      width: 60px;
+  padding: 8px 10px;
+    margin-left: 10px;
+    
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #283136;
+    
+      border: none;
+  border-radius: 5px;
+  background: #f1f1f1;
+}
+
+.max-price {
+  text-align: right;
 }
