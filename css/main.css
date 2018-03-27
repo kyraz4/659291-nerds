@@ -209,19 +209,19 @@ a {
 }
 
 .slider-1 {
-  background-image: url("slide1.png");
+  background-image: url("../img/slide1.png");
   background-repeat: no-repeat;
   background-position: 93% 0px;
 }
 
 .slider-2 {
-  background-image: url("slide2.png");
+  background-image: url("../img/slide2.png");
   background-repeat: no-repeat;
   background-position: 100% 0;
 }
 
 .slider-3 {
-  background-image: url("slide3.png");
+  background-image: url("../img/slide3.png");
   background-repeat: no-repeat;
   background-position: 100% 20px;
 }
@@ -301,43 +301,34 @@ a {
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
-    padding-left: 50px;
-
 }
 
 .write-us {
-    width: 320px;
-    margin-left:210px;
+    margin-top: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top:28px; 
     background-color: #ffffff;
-    padding-bottom:155px; 
+    padding-bottom:47px; 
 }
 
 .write-us p {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
-    padding-left: 52px;
-    padding-top:7px;
-    width: 200px;
-       
+    width: 200px;     
 }
 
 .write-us .btn {
-    margin-top:30px;
     width: 220px;
-    margin-left:50px; 
 }
 .lets-friend {
     padding-top:20px;
-     
 }
 
 .lets-friend b{
     font-size: 36px;
-    line-height: 36px;
-     
-
+    line-height: 36px;    
 }
 
 .lets-friend p {
@@ -462,6 +453,42 @@ a {
     color: #000000;
 }
 
+.pagination {
+    padding-bottom: 30px;
+}
+
+.pagination-link-next {
+    padding-left:78px ;
+    padding-right:78px; ;
+    background-color: #eeeeee;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.pagination-link {
+    
+    padding-bottom: 15px;
+    padding-left: 21px;
+    padding-right: 21px;
+    padding-top: 15px;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    margin-right:6px
+}
+
+.pagination-link:hover,
+.pagination-link:focus,
+.pagination-link-next:hover,
+.pagination-link-next:focus {
+    background-color: #dfdfdf;
+}
+
+.pagination-link:active,
+.pagination-link-next:active {
+      background-color: #d5d5d5;
+}
+
 .sorting-list a {
     font-size: 14px;
     line-height: 18px;
@@ -497,7 +524,7 @@ a {
     text-transform: uppercase;
     display: flex;
     list-style: none;
-    width: 551px;
+    width: 510px;
 
 }
 
@@ -709,6 +736,11 @@ user-menu {
     position: relative;
 }
 
+.contacts .container {
+    position: relative;
+    display: flex;
+}
+
 
 .main-sorting-container {
     display: flex;
@@ -759,12 +791,24 @@ user-menu {
     color: #b2b2b2;
 }
 
-.user-menu .basket {
+ .basket {
     text-transform: uppercase;
-    background-image: url(img/cart-icon.svg);
+   
     background-repeat: no-repeat;
+     position: relative;
+     padding-left: 40px;
 }
 
+.basket:after{
+    position:absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+     background-image: url(../img/cart-icon.svg);
+    background-repeat: no-repeat;
+    left: 0;
+    top: 8px;
+}
 
 .sorting-form {}
 
