@@ -301,10 +301,12 @@ a {
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    padding-top:5px;
+    padding-bottom:5px 
 }
 
 .write-us {
-    margin-top: 53px;
+    margin-top: 46px;
     padding-left: 50px;
     padding-right: 50px;
     padding-top:28px; 
@@ -316,14 +318,17 @@ a {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
-    width: 200px;     
+    width: 200px;  
 }
 
 .write-us .btn {
+   
     width: 220px;
 }
 .lets-friend {
-    padding-top:20px;
+    padding-top:70px;
+    padding-left: 135px;
+
 }
 
 .lets-friend b{
@@ -371,9 +376,18 @@ a {
     line-height: 20px;
     color: #283136;
 }
+
+.sorting-container:not(:first-child) label {
+    padding-bottom:20px; 
+}
+
+.rubber{
+   margin-bottom: 26px; 
+}
+
 .catalog-item {
     position: relative;
-    margin-bottom: 33px;
+    margin-bottom: 32px;
     padding-top: 42px;
     background-color: #eeeeee;
     border-radius: 4px;
@@ -442,7 +456,10 @@ a {
     display: flex;
     width: 760px;
     margin: 0;
-    padding: 0;
+    padding-bottom:38px ;
+    padding-left:0;
+    padding-right:0;
+    padding-top:0;
     flex-wrap: wrap;
     justify-content: space-between;
     
@@ -454,7 +471,7 @@ a {
 }
 
 .pagination {
-    padding-bottom: 30px;
+    padding-bottom: 80px;
 }
 
 .pagination-link-next {
@@ -474,7 +491,7 @@ a {
     padding-top: 15px;
     background-color: #eeeeee;
     border-radius: 4px;
-    margin-right:6px
+    margin-right:6px;
 }
 
 .pagination-link:hover,
@@ -501,6 +518,9 @@ a {
     color: #8f8f8f;
 }
 
+.tel {
+    padding-bottom: 22px;
+}
 .sorting-list a:active {
     color: #000000;
 }
@@ -526,6 +546,11 @@ a {
     list-style: none;
     width: 510px;
 
+}
+.catalog-button {
+    margin-left: 80px;
+    width: 200px;
+    margin-bottom: 42px;
 }
 
 .site-navigation li {
@@ -698,9 +723,7 @@ user-menu {
     padding-left: 140px;
 }
 
-.lets-friend {
-    padding-left: 135px;
-}
+
 .map {
     background-color: #eeeeee;
     display: flex;
@@ -712,6 +735,7 @@ user-menu {
     width:265px;
     justify-content:space-around;
     padding-left:70px; 
+    padding-top:46px; 
 }
 
 .social-button {
@@ -766,16 +790,28 @@ user-menu {
     display: flex;
     justify-content: space-between;
     width: 760px;
+    padding-bottom:50px;
 }
 
 .sorting-container {
     display: flex;
+   
+    margin: 0;
+    padding: 0;
+    
+    border: none;
+
 
 }
-
+.sorting-arrows {
+    width: 40px;
+    display: flex;
+    justify-content: space-between;
+}
 .sorting-list {
     display: flex;
-
+    margin: 0;
+    padding-left:240px; 
 }
 
 .sorting-list li {
@@ -784,10 +820,12 @@ user-menu {
 
 .sorting b {
     text-transform: uppercase;
+    font-size: 18px;
+    line-height: 18px;
 }
 
 .sorting-item {
-    padding-right: 20px;
+    padding-right: 26px;
     color: #b2b2b2;
 }
 
@@ -877,18 +915,18 @@ user-menu {
     width: 260px;
     margin-top: 49px;
 }
-.sorting-container {
- margin: 0;
- padding: 0;
-    
-    border: none;
-}
+
 
 .sorting-container legend {
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
     font-weight: 700;
+    
+}
+
+.sorting-container:not(:first-child) legend {
+    padding-bottom: 20px;
 }
 
 .range-controls {
