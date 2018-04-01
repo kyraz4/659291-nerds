@@ -742,8 +742,7 @@ sup {
 }
 
 .pagination-link:focus,
-.pagination-link-next:focus,
-    {
+.pagination-link-next:focus {
     background-color: #ffffff;
 }
 
@@ -885,7 +884,7 @@ user-menu {
     display: -ms-flexbox;
     display: flex;
     padding-top: 40px;
-    padding-bottom: 18px;
+    padding-bottom: 32px;
 }
 
 
@@ -899,6 +898,22 @@ user-menu {
     list-style: none;
     padding: 0;
     margin-top: 23px;
+}
+
+.line-string {
+    padding-left: 36px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.line-string::before {
+    position: absolute;
+    content: '';
+    height:2px;
+    width: 25px;
+    left: 1px;
+    top: 10px;
+    background-color: #fb565a;
 }
 
 .line {

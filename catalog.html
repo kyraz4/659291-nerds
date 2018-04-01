@@ -61,8 +61,8 @@
                             <label class="check-label-1" for="fixed">Фиксированная</label>
                         </div>
                         <div>
-                            <input class="visually-hidden input-box" type="radio" id="rubber" value="rubber" name="grid" disabled>
-                            <label class="check-label-1" for="rubber" class="rubber">Резиновая</label>
+                            <input class="visually-hidden input-box" type="radio" id="rubber-for" value="rubber-plus" name="grid" disabled>
+                            <label class="check-label-1 rubber" for="rubber-for">Резиновая</label>
                         </div>
                     </fieldset>
                     <fieldset class="sorting-container">
@@ -96,12 +96,18 @@
                     <b>сортировать:</b>
                     <ul class="sorting-list">
                         <li class="sorting-item active"><a href="#">По цене</a></li>
-                        <li class="sorting-item"><a href="#>">По типу</a></li>
+                        <li class="sorting-item"><a href="#">По типу</a></li>
                         <li class="sorting-item"><a href="#">По названию</a></li>
                     </ul>
                     <div class="sorting-arrows">
-                        <a class="icon-down-dir" href="#"><span class="visually-hidden">По убыванию</span><img src="img/icon-down-dir.svg" ></a>
-                        <a class="icon=up-dir no-active" href="#"><span class="visually-hidden">По возрастанию</span><img  src="img/icon-up-dir.svg"></a>
+                        <a class="icon-down-dir" href="#">
+                            <span class="visually-hidden">По убыванию</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
+                        </a>
+                        <a class="icon=up-dir no-active" href="#">
+                            <span class="visually-hidden">По возрастанию</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
+                        </a>
                     </div>
                 </div>
                 <div class="catalog-container">
@@ -176,7 +182,7 @@
     <footer class="page-footer">
         <section class="contacts">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8000.086608950653!2d30.437943!3d59.915188!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1522343609278" width="1440" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d8000.086608950653!2d30.437943!3d59.915188!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1522343609278" allowfullscreen></iframe>
             </div>
             <div class="container">
                 <div class="write-us">
@@ -219,7 +225,7 @@
         <form class="form-to-write-us">
             <div class="write-and-close">
                 <p class="form-to-write-title">Напишите нам</p>
-                <button type="button" class="button-close">Закрыть<img src="img/close-cross.svg"></button>
+                <button type="button" class="button-close">Закрыть<img src="img/close-cross.svg" alt="cross" height="21" width="21"></button>
             </div>
             <div class="name-email-wrap">
                 <p class="your-name-info">
