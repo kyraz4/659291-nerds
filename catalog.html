@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 <ul class="site-navigation">
                     <li><a href="#">студия</a></li>
                     <li><a href="#">клиенты</a></li>
-                    <li><a href="catalog.html" class="current">магазин</a></li>
+                    <li><a class="current">магазин</a></li>
                     <li><a href="#">контакты</a></li>
                 </ul>
                 <ul class="user-menu">
@@ -54,7 +54,7 @@
                         <legend class="sorting-container-name">Сетка:</legend>
                         <div>
                             <input class="visually-hidden input-box" type="radio" id="adaption" value="adaption" name="grid" checked>
-                            <label class="check-label-1" for="adaption">Адаптивная</label>
+                            <label class="check-label-1" for="adaption" aria-label="Адаптивная">Адаптивная</label>
                         </div>
                         <div>
                             <input class="visually-hidden input-box" type="radio" id="fixed" value="fixed" name="grid">
@@ -100,11 +100,11 @@
                         <li class="sorting-item"><a href="#">По названию</a></li>
                     </ul>
                     <div class="sorting-arrows">
-                        <a class="icon-down-dir" href="#">
+                        <a class="icon-dir" href="#">
                             <span class="visually-hidden">По убыванию</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 10L0 0h11"/></svg>
                         </a>
-                        <a class="icon=up-dir no-active" href="#">
+                        <a class="icon-dir no-active">
                             <span class="visually-hidden">По возрастанию</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path fill="#231F20" d="M5.5 0L0 10h11z"/></svg>
                         </a>
@@ -170,7 +170,7 @@
 
                     </ul>
                     <div class="pagination">
-                        <a class="pagination-link active" href="#">1</a>
+                        <a class="pagination-link active">1</a>
                         <a class="pagination-link" href="#">2</a>
                         <a class="pagination-link" href="#">3</a>
                         <a class="pagination-link-next" href="#">Следующая</a>
@@ -189,7 +189,7 @@
                     <h3>nerds design studio</h3>
                     <p>191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д. 19/8</p>
                     <p class="tel">тел. +7 (812) 275-75-75</p>
-                    <a href="#" class="btn btn-red">напишите нам</a>
+                    <a href="write-us.html" class="btn btn-red write-us-btn">напишите нам</a>
                 </div>
             </div>
         </section>
@@ -220,12 +220,12 @@
             </div>
         </div>
     </footer>
-    <section class="write-us-box">
-        <h3 class="visully-hidden">Форма обратной связи</h3>
+    <section class="write-us-box ">
+        <h3 class="visually-hidden">Форма обратной связи</h3>
         <form class="form-to-write-us">
             <div class="write-and-close">
                 <p class="form-to-write-title">Напишите нам</p>
-                <button type="button" class="button-close">Закрыть<img src="img/close-cross.svg" alt="cross" height="21" width="21"></button>
+                <button type="button" class="button-close"><span class="visually-hidden">Закрыть</span></button>
             </div>
             <div class="name-email-wrap">
                 <p class="your-name-info">
@@ -241,8 +241,10 @@
                 <label for="text-letter">Текст письма:</label>
                 <textarea id="text-letter" name="text-letter" placeholder="В свободной форме"></textarea>
             </p>
+            <button class="btn btn-red" type="submit">Отправить</button>
         </form>
     </section>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>
